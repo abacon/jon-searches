@@ -1,0 +1,18 @@
+{
+  "name": "jon-searches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node --presets es2015 index.js",
+    "test": "$ tape -r babel-register tests/**/*.js | tap-spec"
+  },
+  "author": "Bacon <abacon@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.0.0",
+    "raven": "^0.9.0",
+    "spooky": "^0.2.5",
+    "twit": "^2.1.1"
+  }
+}

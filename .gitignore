@@ -1,0 +1,6 @@
+node_modules/
+creds.js
+*.swp
+.DS_Store
+screenshots/*
+npm-debug.log
