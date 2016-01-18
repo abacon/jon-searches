@@ -22,7 +22,7 @@ const isSearch = function isSearch (text) {
 
 const makeQuery = function makeQuery (tweet) {
   let provider = tweet.split(':')[0].toLowerCase()
-  let searchTerms = tweet.replace(/^[^:]*:/, '').trim()
+  let searchTerms = tweet.replace(/^[^:]*:/, '').replace(/https:\/\/[^\s]*$/, '').trim()
 
   for (let i in providers) {
     if (some(map(providers[i], pattern => pattern === provider))) {
