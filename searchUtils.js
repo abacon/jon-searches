@@ -2,9 +2,12 @@ const {some, every, map} = require('lodash')
 
 const providers = {
   'http://www.google.com/#q=': ['g', 'google'],
+  'https://www.google.com/maps/search/': ['maps'],
   'http://www.duckduckgo.com/?q=': ['d'],
   'http://www.yahoo.com/?q=': ['yahoo', 'y'],
-  'http://www.youtube.com/results?search_query=': ['youtube'],
+  'https://en.wikipedia.org/w/index.php?search=': ['w', 'wikipedia', 'wiki'],
+  'https://soundcloud.com/search?q=': ['soundcloud'],
+  'http://www.youtube.com/results?search_query=': ['youtube', 'yt'],
   'http://www.bing.com/?q=': ['bing', 'b']
 }
 

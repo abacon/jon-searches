@@ -28,7 +28,7 @@ let reply = function (id, searchURL, imagePath) {
 
     // now we can reference the media and post a tweet (media will attach to the tweet)
     var mediaIdStr = data.media_id_string
-    var params = { status: '@xtrasearches ' + searchURL, in_reply_to_status_id: id, media_ids: [mediaIdStr] }
+    var params = { status: '@xtratoppings ' + searchURL, in_reply_to_status_id: id, media_ids: [mediaIdStr] }
 
     T.post('statuses/update', params, function (err, data, response) {
       if (err) {

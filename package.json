@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node --presets es2015 index.js",
+    "cli": "babel-node --presets es2015",
     "test": "tape -r babel-register tests/**/*.js | tap-spec"
   },
   "author": "Bacon <abacon@gmail.com>",

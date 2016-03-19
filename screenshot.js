@@ -9,7 +9,8 @@ var screenshot = function (url, id, cb) {
     },
     casper: {
       logLevel: 'debug',
-      verbose: true
+      verbose: true,
+      viewportSize: {width: 700, height: 500}
     }
   }, function (err) {
     if (err) {
